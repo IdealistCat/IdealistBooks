@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "akamud.vscode-javascript-snippet-pack",
-        "bysabi.prettier-vscode-standard"
+        "bysabi.prettier-vscode-standard",
+        "esbenp.prettier-vscode"
     ]
 }
