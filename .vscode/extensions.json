@@ -2,6 +2,8 @@
     "recommendations": [
         "akamud.vscode-javascript-snippet-pack",
         "bysabi.prettier-vscode-standard",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "ritwickdey.liveserver",
+        "wallabyjs.quokka-vscode"
     ]
 }
