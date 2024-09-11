@@ -7,22 +7,22 @@ function returnVersion(dev = false) {
     curVer += '0.0.1';
 
     // its alpha
-    curVer += addSumTxt('a', '');
+    curVer += addSumTxt('a', '', '', '');
 
     // its beta
-    // curVer += addSumTxt('b', '');
+    // curVer += addSumTxt('b', '', '', '');
 
     // its a pre-release?
-    // curVer += addSumTxt('PR', '_');
+    // curVer += addSumTxt('PR', '', '', '_');
 
     // add other stuff
-    // curVer += addSumTxt('01p', '_'); // p is for patch
+    // curVer += addSumTxt('01p', '', '', '_'); // p is for patch
 
     // development version
     if (dev) {
         curVer += addSumTxt('Indev');
         // dev version subtitle
-        curVer += addSumTxt('Basic B**** Site');
+        curVer += addSumTxt('Basic B**** Site', '(', ')');
     }
 
     getDumbAssCommit();
@@ -30,8 +30,8 @@ function returnVersion(dev = false) {
     return curVer;
 }
 
-function addSumTxt(txt = 'hm', add = ' ') {
-    return `${add}${txt}`;
+function addSumTxt(txt = 'hm', begin="", end="", add = ' ') {
+    return `${add}${begin}${txt}${end}`;
 }
 
 export function getDumbAssCommit() {
