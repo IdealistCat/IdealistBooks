@@ -1,0 +1,13 @@
+[theme="default"] {
+    --versionTxt_bgcolor: blue;
+    --versionTxt_color: white;
+}
+
+#version_text {
+    background-color: var(--versionTxt_bgcolor);
+    color: var(--versionTxt_color);
+    
+    font-family: monospace;
+
+    background-size: cover;
+}
