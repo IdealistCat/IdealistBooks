@@ -1,0 +1,1 @@
+document.body.append(document.createElement('footer').append(document.createElement('p').innerHTML = "v0.0.1a"));
