@@ -11,3 +11,18 @@
 
     background-size: cover;
 }
+
+#banner {
+    background-image: url('/assets/img/revision4.png');
+    color: white;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    
+    padding: 25px;
+    margin-top: -5px;
+}
