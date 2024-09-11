@@ -1,12 +1,17 @@
 export const VERSION = returnVersion(true);
 
 function returnVersion(dev = false) {
-    var curVer = '0.0.1';
+    var curVer = 'IdealistBooks ';
+    
+    // add version
+    curVer += '0.0.1';
 
     // its alpha
     curVer += 'a';
+
     // its beta
     // curVer += 'b';
+
     // its a pre-release?
     // curVer += '_PR';
 
@@ -16,5 +21,5 @@ function returnVersion(dev = false) {
     // development version
     if (dev) curVer += ' Indev';
 
-    return 'v' + curVer;
+    return curVer;
 }
