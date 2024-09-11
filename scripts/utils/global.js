@@ -21,6 +21,7 @@ function returnVersion(dev = false) {
     // development version
     if (dev) {
         curVer += addSumTxt('Indev');
+        
         // dev version subtitle
         curVer += addSumTxt('Basic B**** Site', '(', ')');
     }
