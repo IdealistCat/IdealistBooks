@@ -19,7 +19,20 @@ function returnVersion(dev = false) {
     // curVer += '_01p' // p is for patch
 
     // development version
-    if (dev) curVer += ' Indev';
+    if (dev) {
+        curVer += ' Indev';
+    }
+
+    getDumbAssCommit();
 
     return curVer;
+}
+
+export function getDumbAssCommit() {
+
+    fetch('https://api.github.com/repos/IdealistBooks/IdealistBooks/commits?per_page=1')
+  .then(res => res.json())
+  .then(res => {
+    document.getElementById('dumbcommit').innerHTML = res[0].commit.message.split('/n')[0];
+  })
 }
